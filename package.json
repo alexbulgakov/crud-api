@@ -1,0 +1,45 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "Simple CRUD API",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "cross-env NODE_ENV=development nodemon",
+    "start:prod": "cross-env NODE_ENV=production npm run build && node ./dist/bundle.js",
+    "build": "webpack",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexbulgakov/crud-api.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Aleksei Bulgakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexbulgakov/crud-api/issues"
+  },
+  "homepage": "https://github.com/alexbulgakov/crud-api#readme",
+  "dependencies": {
+    "dotenv": "^16.4.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.17",
+    "@types/nodemon": "^1.19.6",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^9.0.8",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
